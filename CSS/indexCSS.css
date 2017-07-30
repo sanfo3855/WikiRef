@@ -1,0 +1,341 @@
+body{
+    margin: 1%;
+}
+
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.logoBackground {
+    background: url('../Images/logoBackground.png') #3D3D3D no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    position: relative;
+    padding-bottom: 2.5%;
+}
+
+.normalBackground {
+    background: #3D3D3D no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+
+    position: relative;
+    padding-bottom: 2.5%;
+}
+
+a:link{
+    color: rgba(255,237,79,0.58);
+}
+
+a:visited{
+    color: rgba(255,237,79,0.58);
+}
+
+#navbar-complete {
+    -webkit-background-size: inherit;
+    -moz-background-size: inherit;
+    -o-background-size: inherit;
+    background-size: inherit;
+    size: inherit;
+    border-color: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 1);
+}
+
+#navbar-brand {
+    color: white;
+    font-size: 40px;
+}
+
+#navList li{
+    font-size: 26px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+
+#resultDefault {
+    padding-top: 5%;
+    text-align: center;
+}
+
+#searchNavForm {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#noNavContent {
+    padding-top: 0%;
+}
+
+#containerResultSearch {
+    padding-top: 5%;
+    text-align: left;
+    color:inherit;
+    margin-left: 2.5%;
+}
+
+#containerAll {
+    padding-top: 5%;
+    color: inherit;
+}
+
+#containerCross{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.55);
+    border-color: black;
+    max-height: 83%;
+    max-width: 30%;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+
+}
+
+#colCrossRef{
+    height: 100%;
+}
+
+#defaultList {
+    list-style-type: none;
+}
+
+#defaultResult{
+    text-align: left;
+    padding-left: 0%;
+    padding-right: 1%;
+}
+
+#containerTwit{
+    background: rgba(0, 0, 0, 0.0);
+    border-color: rgba(0, 0, 0, 0.0);
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../Images/loader-big-2.gif) center no-repeat #3D3D3D;
+}
+
+#map{
+    height: 60vh;
+    /*margin-left: 5%;*/
+    width: 100%;
+}
+
+#modalMap a:link{
+    color: #207AD1;
+}
+
+.leaflet-control-attribution a{
+    color: #207AD1;
+}
+
+#modalLogin{
+    color: black;
+}
+
+.modal-content{
+    color: black;
+    font-weight: bold;
+}
+
+#myTab a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+}
+
+#buttonLogin {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+}
+
+#buttonSignUp {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+}
+
+#iconLogin {
+    float: right;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+#iconMenu {
+    float: right;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+#registerMessage{
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a{
+    letter-spacing: 3px;
+    padding-left: 12px;
+    padding-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav #sidenavSurname, #sidenavName, #checkAnnotation{
+    letter-spacing: 3px;
+    padding-left: 12px;
+    font-size: 19px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav #sidenavSurname:hover, .offcanvas #sidenavSurname:focus{
+    color: #f1f1f1;
+}
+.sidenav #sidenavName:hover, .offcanvas #sidenavName:focus{
+    color: #f1f1f1;
+}
+.sidenav #checkAnnotation:hover, .offcanvas #checkAnnotation:focus{
+    color: #f1f1f1;
+}
+
+#main {
+    transition: margin-right .4s;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    padding-left: 40px;
+    margin-left: 12px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 40px;
+    height: 21px;
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    right: 4px;
+    bottom: 3px;
+    top: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: rgba(255,237,79,0.58);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px rgba(255,237,79,0.58);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#rowWiki .plainlinks a{
+    color: black;
+}
+#rowWiki{
+    text-align: justify;
+}
+
+.bubbleChart {
+    width:100%;
+    height:480px;
+}
